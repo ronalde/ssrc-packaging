@@ -1,9 +1,3 @@
-ssrc (1.30-2) saucy; urgency=low
-
-  * try to overcome Launchpad upload error
-
- -- Ronald van Engelen <ronalde+launchpad@lacocina.nl>  Thu, 12 Dec 2013 13:59:27 +0100
-
 ssrc (1.30-1) saucy; urgency=low
 
   * Files in the root will be patched at package build time
