@@ -1,0 +1,31 @@
+--- a/Makefile
++++ b/Makefile
+@@ -1,3 +1,4 @@
++BIN = $(DESTDIR)/usr/bin
+ CC = gcc
+ CFLAGS = -O2 -lm 
+ #CFLAGS += -DBIGENDIAN
+@@ -5,10 +6,19 @@
+ all : ssrc ssrc_hp
+ 
+ ssrc : ssrc.c fftsg_ld.c dbesi0.c
+-	$(CC) $(CFLAGS) ssrc.c fftsg_ld.c dbesi0.c -o ssrc
++	$(CC) $(CFLAGS) ssrc.c fftsg_ld.c dbesi0.c -o ssrc -lm
+ 
+ ssrc_hp : ssrc.c fftsg_ld.c dbesi0.c
+-	$(CC) $(CFLAGS) -DHIGHPREC ssrc.c fftsg_ld.c dbesi0.c -o ssrc_hp
++	$(CC) $(CFLAGS) -DHIGHPREC ssrc.c fftsg_ld.c dbesi0.c -o ssrc_hp -lm
+ 
+ clean :
+-	rm -f ssrc ssrc_hp *.o *~
+\ No newline at end of file
++	rm -f ssrc ssrc_hp *.o *~
++
++$(BIN):
++	mkdir -p $(BIN)
++
++install: ssrc ssrc_hp $(BIN)
++	install ./ssrc $(BIN)
++	install ./ssrc_hp $(BIN)
++	install -d $(DESTDIR)/usr/share/doc/ssrc
++	cp -a bessel.tar.gz $(DESTDIR)/usr/share/doc/ssrc

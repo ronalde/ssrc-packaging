@@ -1,0 +1,36 @@
+Description: Include tgmath.h to make it compile
+Author: Ronald van Engelen <ronalde+launchpad@lacocina.nl>
+Forwarded: no
+Last-Update: 2013-12-12
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/dbesi0.c
++++ b/dbesi0.c
+@@ -1,6 +1,7 @@
+ /* Bessel I_0(x) function in double precision */
+ 
+ #include <math.h>
++#include <tgmath.h>
+ 
+ double dbesi0(double x)
+ {
+--- a/fftsg_ld.c
++++ b/fftsg_ld.c
+@@ -288,6 +288,7 @@
+ 
+ #include <stdlib.h>
+ #include <math.h>
++#include <tgmath.h>
+ 
+ #ifdef REAL_IS_FLOAT
+ typedef float REAL;
+--- a/ssrc.c
++++ b/ssrc.c
+@@ -1,6 +1,7 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <math.h>
++#include <tgmath.h>
+ #include <assert.h>
+ #include <time.h>
+ 

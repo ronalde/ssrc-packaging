@@ -1,0 +1,29 @@
+Source: ssrc
+Section: sound
+Priority: extra
+Maintainer: Ronald van Engelen <ronalde+launchpad@lacocina.nl>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.2
+Homepage: http://shibatch.sourceforge.net/
+Vcs-Git: git@github.com:ronalde/ssrc-packaging.git
+Vcs-Browser: https://github.com/ronalde/ssrc-packaging
+
+Package: ssrc
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: SSRC is a Shibatch high quality audio sampling rate converter
+ .
+ It converts the sampling rate of a PCM wav file. 44.1kHz sampling
+ rate is used for a CD, and 48kHz is used for a DVD. However,
+ converting between these frequencies is hard, because the ratio
+ beteen these two frequencies is 147:160, which are not small
+ numbers. Accordingly, we need a very long FIR filter in order not to
+ degrade the sound quality during conversion. This program utilizes
+ FFTs to apply the FIR filter in order to reduce the amount of
+ computation.
+ .
+ This program also has a function to apply dither to extend the
+ perceived dynamic range. It is optimized for human's ear
+ characteristics.
+ .
+ Homepage: http://shibatch.sourceforge.net/
