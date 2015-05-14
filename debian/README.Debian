@@ -1,9 +1,11 @@
 Debian packaging README for ssrc
 ================================
 
-This package adheres to the workflow described in PackagingWithGit[a], and the branch layout is as recommended by the git-buildpackage manual[b]. The debian packages are build manually, after which the Ubuntu
-packages are build automatically through a daily build recipe in
-Launchpad[c]. The upstream and packaging code is maintained in the
+This package adheres to the workflow described in PackagingWithGit[a],
+and the branch layout is as recommended by the git-buildpackage
+manual[b]. The debian packages are build manually, after which the
+Ubuntu packages are build automatically through a daily build recipe
+in Launchpad[c]. The upstream and packaging code is maintained in the
 ssrc-packaging repository on github[d].
 
 
@@ -142,4 +144,4 @@ Ad [d]: git repository on github:
 Ad [e]: Debian New Maintainers' Guide
 	https://www.debian.org/doc/manuals/maint-guide/index.en.html
 
- -- root <root@xblade.lacocina.nl>, Thu, 14 May 2015 13:40:58 +0200
+ -- root <root@xblade.lacocina.nl>, Thu, 14 May 2015 14:39:30 +0200
