@@ -1,14 +1,11 @@
 ssrc (1.30-3) stable utopic; urgency=medium
 
-  * Again nothing changed; still preparing for default packaginggit workflow with launchpad.
-  * Launchpad build recipe updated to:
-    `bzr-builder format 0.3 deb-version {debversion}~ppa{revno}'
-    this will (hopefully) lead to:
-    ssrc-1.30-2~ppaX~ubuntu15.10.1 (where X is the launchpad specific build number)
+  * Again nothing changed; still preparing for default packagingwithgit workflow with launchpad.
+  * debian/README.Debian: packaging workflow described.
 
  -- Ronald van Engelen <ronalde+launchpad@lacocina.nl>  Thu, 14 May 2015 12:18:00 +0200
 
-ssrc (1.30-2) stable utopic; urgency=medium
+ssrc (1.30-2) UNRELEASED; urgency=medium
 
   * Nothing changed really; just preparing for default packaginggit workflow 
 
