@@ -1,8 +1,14 @@
+ssrc (1.30-2) stable utopic; urgency=medium
+
+  * Nothing changed really; just preparing for default packaginggit workflow 
+
+ -- Ronald van Engelen <ronalde+launchpad@lacocina.nl>  Thu, 14 May 2015 11:28:19 +0200
+
 ssrc (1.30-1) saucy; urgency=low
 
   * Files in the root will be patched at package build time
   * dpkg-source 3.0 (quilt) format
   * Packaging information available at: 
-    http://lacocina.nl/2013/12/11/shibatch-ssrc-packages/
+    http://lacocina.nl/shibatch-ssrc-packages/
 
  -- Ronald van Engelen <ronalde+launchpad@lacocina.nl>  Thu, 12 Dec 2013 13:59:13 +0100
